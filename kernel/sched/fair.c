@@ -1584,7 +1584,7 @@ static inline void __update_group_entity_contrib(struct sched_entity *se) {}
  * tweaking suit particular needs.
  */
 
-static unsigned int hmp_up_threshold = 479;
+static unsigned int hmp_up_threshold = 524;
 static unsigned int hmp_down_threshold = 214;
 
 static unsigned int hmp_semiboost_up_threshold = 479;
@@ -3880,7 +3880,7 @@ static unsigned int hmp_next_down_threshold = 4096;
 
 #ifdef CONFIG_SCHED_HMP_LITTLE_PACKING
 static unsigned int hmp_packing_enabled = 0;
-static unsigned int hmp_full_threshold = (NICE_0_LOAD * 9) / 8;
+static unsigned int hmp_full_threshold = 42;
 #endif
 
 static inline bool hmp_boost(void)
