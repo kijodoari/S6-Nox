@@ -324,7 +324,7 @@ static void __init set_volt_table_CA53(void)
 	case 12 :
 		max_support_idx_CA53 = L7; break;	/* 1.3GHz */
 	default :
-		max_support_idx_CA53 = L5;	/* 1.5GHz */
+		max_support_idx_CA53 = L3;	/* 1.7GHz */
 	}
 
 #ifdef CONFIG_S6_LOW_IDLE
